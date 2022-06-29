@@ -283,6 +283,7 @@ configure(allprojects) { project ->
 	}
 	configurations.all {
 		resolutionStrategy {
+			force 'xml-apis:xml-apis:1.0.b2'
 			cacheChangingModulesFor 0, "seconds"
 			cacheDynamicVersionsFor 0, "seconds"
 		}
